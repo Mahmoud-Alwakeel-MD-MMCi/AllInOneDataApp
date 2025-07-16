@@ -29,11 +29,17 @@ AllInOneDataApp is a Streamlit-powered data application that integrates SQL expl
 **Environment Variables:** Before running, make sure to configure the environment variables by copying `.env.example` to `.env` and adding your OpenAI API key.
 
 ## Screenshots
-![Landing Page](docs/screenshots/landing_page.png)
-*Landing page of AllInOneDataApp (initial state)*
 
-![Query and Analysis](docs/screenshots/query_example.png)
-*Example of running a SQL query and generating an analysis via the app*
+| # | Stage | Preview |
+|---|-------|---------|
+| 1 | **App landing** – main menu & tabs | ![Landing](docs/screenshots/landing_page.png) |
+| 2 | **Data-quality tab (datasets loaded)** | ![DQ landing](docs/screenshots/dq_tab_landing.png) |
+| 3 | **Select & map columns** | ![Column mapping](docs/screenshots/dq_columns_mapping.png) |
+| 4 | **Run data-quality / drift check** | ![Run check](docs/screenshots/dq_run_check.png) |
+| 5 | **Summary overview (KPI bar)** | ![Summary](docs/screenshots/dq_summary_overview.png) |
+| 6 | **Drift details table** | ![Details](docs/screenshots/dq_drift_details.png) |
+| 7 | **SQL query results & analysis** | ![Query results](docs/screenshots/sql_query_results.png) |
+
 
 ## Contributing
 **Contributing:** Contributions are welcome! Please fork the repository and open a pull request. For major changes, discuss via an issue first. Ensure that you run `ruff` for linting and `pytest` for tests before submitting.
