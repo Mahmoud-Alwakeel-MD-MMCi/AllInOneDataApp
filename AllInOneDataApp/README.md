@@ -38,7 +38,9 @@ AllInOneDataApp is a Streamlit-powered data application that integrates SQL expl
 | 4 | **Run data-quality / drift check** | ![Run check](docs/screenshots/dq_run_check.png) |
 | 5 | **Summary overview (KPI bar)** | ![Summary](docs/screenshots/dq_summary_overview.png) |
 | 6 | **Drift details table** | ![Details](docs/screenshots/dq_drift_details.png) |
-| 7 | **SQL query results & analysis** | ![Query results](docs/screenshots/sql_query_results.png) |
+| 7 | **SQL query results & analysis panel** | ![Query results](docs/screenshots/sql_query_results.png) |
+| 8 | **Auto-generated Table 1 (patient characteristics)** | ![Table 1](docs/screenshots/analysis_table1.png) |
+
 
 
 ## Contributing
