@@ -10,26 +10,26 @@ from sqlalchemy import create_engine, inspect, text
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Imports used behind the scenes for data quality checks (hidden from UI text).
+
 from evidently.test_suite import TestSuite
 from evidently.test_preset import NoTargetPerformanceTestPreset
 from evidently import ColumnMapping
 
-# We'll keep openai here but won't advertise it in the UI.
+
 import openai
 
 ################################################################################
 #                             GLOBAL CONFIG & SETUP                             #
 ################################################################################
 
-# Fixed API key and model settings (hidden from the UI)
+
 MODEL_NAME = "o3-mini"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.set_page_config(layout="wide")  # Optional: set Streamlit to wide mode
 #st.set_option("server.maxUploadSize", 10000)  # Effectively remove limit (10,000 MB)
 
-# Session state
+
 if "db_engine" not in st.session_state:
     st.session_state["db_engine"] = None
 if "schema_info" not in st.session_state:
