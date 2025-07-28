@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: ..            # ← point one level up (repo root)
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8501:8501"
+    env_file:
+      - ../.env              # ← .env lives in repo root
